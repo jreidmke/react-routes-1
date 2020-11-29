@@ -1,23 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, useParams, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, useParams } from "react-router-dom";
 import DogList from './DogList';
+import DogDetails from './DogDetails';
+
+import whiskey from "./images/whiskey.jpg";
+import tubby from "./images/tubby.jpg";
+import duke from "./images/duke.jpg";
+import perry from "./images/perry.jpg";
 
 function App() {
   return (
     <div className="App">
-      {/* <Route exact path="/dogs">{defaultProps.dogs.map(d => d.name)}</Route> */}
-      <Route exact path="/dogs">{dogs.map(d => <DogList name={d.name} age={d.age} src={d.src} facts={d.facts}/>)}</Route>
-      {/* First make a dog list component and route to it*/}
-      {/* Then make a dog detail component and link to it */}
+      <BrowserRouter>
+        <Route exact path="/dogs">
+          {dogs.dogs.map(d => <DogList name={d.name} age={d.age} src={d.src} facts={d.facts}/>)}
+        </Route>
 
+        <Route exact path="/dogs/:name">
+          <DogDetails dogs={dogs.dogs}/>
+        </Route>
+
+        <Redirect to="/dogs"/>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
 
-App.defaultProps = {
+export const dogs = {
   dogs: [
     {
       name: "Whiskey",
@@ -61,3 +73,6 @@ App.defaultProps = {
     }
   ]
 }
+
+
+App.defaultProps = { dogs };

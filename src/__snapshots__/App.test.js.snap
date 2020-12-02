@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <h1>
+      Look at these Dogs!
+    </h1>
+    <div>
+      <img
+        src="whiskey.jpg"
+      />
+      <h3>
+        <a
+          href="/dogs/whiskey"
+        >
+          Whiskey
+        </a>
+        , 5 Years Old
+      </h3>
+      <ul>
+        <li>
+          Whiskey loves eating popcorn.
+        </li>
+        <li>
+          Whiskey is a terrible guard dog.
+        </li>
+        <li>
+          Whiskey wants to cuddle with you!
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img
+        src="duke.jpg"
+      />
+      <h3>
+        <a
+          href="/dogs/duke"
+        >
+          Duke
+        </a>
+        , 3 Years Old
+      </h3>
+      <ul>
+        <li>
+          Duke believes that ball is life.
+        </li>
+        <li>
+          Duke likes snow.
+        </li>
+        <li>
+          Duke enjoys pawing other dogs.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img
+        src="perry.jpg"
+      />
+      <h3>
+        <a
+          href="/dogs/perry"
+        >
+          Perry
+        </a>
+        , 4 Years Old
+      </h3>
+      <ul>
+        <li>
+          Perry loves all humans.
+        </li>
+        <li>
+          Perry demolishes all snacks.
+        </li>
+        <li>
+          Perry hates the rain.
+        </li>
+      </ul>
+    </div>
+    <div>
+      <img
+        src="tubby.jpg"
+      />
+      <h3>
+        <a
+          href="/dogs/tubby"
+        >
+          Tubby
+        </a>
+        , 4 Years Old
+      </h3>
+      <ul>
+        <li>
+          Tubby is really stupid.
+        </li>
+        <li>
+          Tubby does not like walks.
+        </li>
+        <li>
+          Angelina used to hate Tubby, but claims not to anymore.
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;

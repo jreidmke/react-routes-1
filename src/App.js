@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { Route, Redirect } from "react-router-dom";
 import DogList from './DogList';
 import DogDetails from './DogDetails';
 
@@ -12,7 +12,7 @@ import perry from "./images/perry.jpg";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <h1>Look at these Dogs!</h1>
         <Route exact path="/dogs">
           {dogs.dogs.map(d => <DogList name={d.name} age={d.age} src={d.src} facts={d.facts}/>)}
         </Route>
@@ -22,7 +22,6 @@ function App() {
         </Route>
 
         <Redirect to="/dogs"/>
-      </BrowserRouter>
     </div>
   );
 }

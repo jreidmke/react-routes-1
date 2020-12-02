@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const DogDetails = ({dogs}) => {
     const {name} = useParams();
@@ -8,7 +7,12 @@ const DogDetails = ({dogs}) => {
 
     return(
         <div>
+            <img src={dog.src}/>
             <h3>{dog.name}, {dog.age} Years Old</h3>
+            <ul>
+                {dog.facts.map(f => <li>{f}</li>)}
+            </ul>
+            <h3><Link to="/dogs">Return Home</Link></h3>
         </div>
     )
 }

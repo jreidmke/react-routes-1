@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Route, Redirect, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import DogList from './DogList';
 import DogDetails from './DogDetails';
 
